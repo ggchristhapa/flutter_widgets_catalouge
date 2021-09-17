@@ -27,6 +27,7 @@ dependencies:
   flutter_map: ^0.14.0
   latlng: ^0.1.0
   lottie: ^1.1.0
+  liquid_swipe: ^2.1.0
   flutter:
     sdk: flutter
 
