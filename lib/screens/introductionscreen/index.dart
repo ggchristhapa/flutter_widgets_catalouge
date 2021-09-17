@@ -87,7 +87,7 @@ class IntroductinScreen extends HookWidget {
                 style: TextStyle(fontSize: 15),
               ),
               Text(
-                'Contribute and help people in your area Discover the best ways  from authentic sources',
+                'Contribute and help people in your area Discover the best ways from authentic sources',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 15),
               )

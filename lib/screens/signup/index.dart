@@ -27,7 +27,7 @@ class SignupScreen extends HookWidget {
             InputWidget(
               label: 'Contact Number',
             ),
-            InputWidget(
+            InputWidget(  
               label: 'Email',
             ),
             InputWidget(
