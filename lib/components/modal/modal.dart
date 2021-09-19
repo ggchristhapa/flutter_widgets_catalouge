@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:riddhasoft_utils/components/button/buttons.dart';
 
+// ignore: must_be_immutable
 class ModalWidgets extends HookWidget {
   ModalWidgets({Key? key, this.header, this.headerIcon}) : super(key: key);
   var header;

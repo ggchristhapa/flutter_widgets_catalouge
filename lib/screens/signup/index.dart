@@ -14,32 +14,35 @@ class SignupScreen extends HookWidget {
     return Scaffold(
       appBar: appBarWidget(title: 'Signup Screen', centertitle: true),
       body: Container(
-        padding: EdgeInsets.all(15),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Lottie.asset('assets/signup.json',
-                height: MediaQuery.of(context).size.width * 0.5),
-            InputWidget(
-              label: 'Name',
-            ),
-            InputWidget(
-              label: 'Contact Number',
-            ),
-            InputWidget(  
-              label: 'Email',
-            ),
-            InputWidget(
-              label: 'Password',
-            ),
-            ButtonWidget(
-              title: 'Signup',
-              btnIcon: Icons.login,
-              pressed: () {},
-              radius: 15.0,
-            )
-          ],
+        alignment: Alignment.center,
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(15),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Lottie.asset('assets/signup.json',
+                  height: MediaQuery.of(context).size.width * 0.4),
+              InputWidget(
+                label: 'Name',
+              ),
+              InputWidget(
+                label: 'Contact Number',
+              ),
+              InputWidget(
+                label: 'Email',
+              ),
+              InputWidget(
+                label: 'Password',
+              ),
+              ButtonWidget(
+                title: 'Signup',
+                btnIcon: Icons.login,
+                pressed: () {},
+                radius: 15.0,
+              )
+            ],
+          ),
         ),
       ),
     );

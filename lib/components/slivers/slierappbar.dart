@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
+// ignore: must_be_immutable
 class SliverAppBarWidget extends StatelessWidget {
   SliverAppBarWidget(
       {Key? key,

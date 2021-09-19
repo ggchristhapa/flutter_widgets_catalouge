@@ -34,16 +34,20 @@ class HomeScreen extends HookWidget {
               ];
             },
             body: ListView.builder(
-                itemCount: utilsItems.length,
-                itemBuilder: (BuildContext context, index) {
-                  return ListTile(
-                    leading: Icon(utilsItems[index].icon),
-                    title: Text(utilsItems[index].title),
-                    onTap: () {
-                      navigateTo(
-                          screen: utilsItems[index].screen, context: context);
-                    },
-                  );
-                })));
+              itemCount: utilsItems.length,
+              itemBuilder: (BuildContext context, index) {
+                return AnimatedOpacity(
+                    opacity: 0.7,
+                    duration: Duration(seconds: 2),
+                    child: ListTile(
+                      leading: Icon(utilsItems[index].icon),
+                      title: Text(utilsItems[index].title),
+                      onTap: () {
+                        navigateTo(
+                            screen: utilsItems[index].screen, context: context);
+                      },
+                    ));
+              },
+            )));
   }
 }

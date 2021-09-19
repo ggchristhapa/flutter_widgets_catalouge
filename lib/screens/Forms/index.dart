@@ -37,8 +37,13 @@ class FormScreen extends StatelessWidget {
               values: RangeValues(0, 40),
               min: 0,
               max: 100,
+              onChangeEnd: (endPoint) {
+                print(endPoint);
+              },
+              onChangeStart: (startPoint) {
+                print(startPoint);
+              },
               divisions: 5,
-              labels: RangeLabels('0', '40'),
               onChanged: (RangeValues values) {},
             ),
           ],
