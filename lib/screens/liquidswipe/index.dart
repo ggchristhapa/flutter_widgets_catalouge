@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
+import 'package:riddhasoft_utils/components/appbar/appbar.dart';
 
 ///Class to hold data for itembuilder in Withbuilder app.
 class ItemData {
@@ -45,6 +46,7 @@ class _LiquidSwiperScreen extends State<LiquidSwiperScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: appBarWidget(title: 'Liquid Swiper', centertitle: true),
       body: LiquidSwipe.builder(
         itemCount: data.length,
         itemBuilder: (context, index) {

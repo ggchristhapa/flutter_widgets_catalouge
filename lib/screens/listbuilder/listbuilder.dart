@@ -10,9 +10,7 @@ class ListBuilderScreen extends HookWidget {
     return Scaffold(
       appBar: appBarWidget(title: 'ListBuilder', centertitle: true),
       body: ListBuilderWidget(
-        onTap: (value) {
-          print(value);
-        },
+        onTap: (value) {},
         items: [
           '1',
           '2',
@@ -28,7 +26,6 @@ class ListBuilderScreen extends HookWidget {
           '3',
           '1',
           '2',
-          '3'
         ],
       ),
     );

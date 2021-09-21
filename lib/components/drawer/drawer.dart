@@ -4,6 +4,7 @@ import 'package:riddhasoft_utils/screens/Buttons/index.dart';
 import 'package:riddhasoft_utils/screens/Forms/index.dart';
 import 'package:riddhasoft_utils/screens/bottomappbar/index.dart';
 import 'package:riddhasoft_utils/screens/cards/index.dart';
+import 'package:riddhasoft_utils/screens/charts/index.dart';
 import 'package:riddhasoft_utils/screens/expansantiles/index.dart';
 import 'package:riddhasoft_utils/screens/gridbuilder/index.dart';
 import 'package:riddhasoft_utils/screens/hero/index.dart';
@@ -98,6 +99,7 @@ List<ListItem> utilsItems = [
       'Liquid Swiper', true, Icons.swipe, Colors.black, LiquidSwiperScreen()),
   ListItem('Loaders', true, Icons.refresh, Colors.black, LoaderScreen()),
   ListItem('Shimmer', true, Icons.create, Colors.black, ShimmerScreen()),
+  ListItem('Charts', true, Icons.pie_chart, Colors.black, ChartScreen()),
   ListItem('Layout Builder', true, Icons.layers_outlined, Colors.black,
       LayoutBuilderScreen()),
   ListItem('Expansen Tiles (Accordin)', true, Icons.arrow_downward,

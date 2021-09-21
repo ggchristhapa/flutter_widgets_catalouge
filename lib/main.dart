@@ -12,10 +12,12 @@ class MyApp extends HookWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Riddhasoft Utilis',
         debugShowCheckedModeBanner: false,
-        theme:
-            ThemeData(primarySwatch: Colors.blue, brightness: Brightness.dark),
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          brightness: Brightness.dark,
+        ),
         home: HomeScreen());
   }
 }
