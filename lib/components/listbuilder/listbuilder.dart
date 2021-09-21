@@ -15,7 +15,6 @@ class ListBuilderWidget extends HookWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
       itemCount: items.length ?? 0,
       itemBuilder: (context, index) {
         var item = items[index];

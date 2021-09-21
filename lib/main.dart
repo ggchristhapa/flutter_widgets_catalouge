@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:lottie/lottie.dart';
-import 'package:riddhasoft_utils/components/appbar/appbar.dart';
-import 'package:riddhasoft_utils/components/drawer/drawer.dart';
 import 'package:riddhasoft_utils/screens/home/index.dart';
-import 'package:riddhasoft_utils/utils/navigate.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,10 +12,12 @@ class MyApp extends HookWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Riddhasoft Utilis',
         debugShowCheckedModeBanner: false,
-        theme:
-            ThemeData(primarySwatch: Colors.blue, brightness: Brightness.dark),
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          brightness: Brightness.dark,
+        ),
         home: HomeScreen());
   }
 }

@@ -57,6 +57,7 @@ class ButtonWidget extends HookWidget {
   }
 }
 
+// ignore: must_be_immutable
 class TextButtonWidget extends StatelessWidget {
   TextButtonWidget({Key? key, required this.title, this.pressed})
       : super(key: key);
@@ -75,6 +76,7 @@ class TextButtonWidget extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class IconButtonWIdget extends StatelessWidget {
   IconButtonWIdget({Key? key, this.pressed, this.icon}) : super(key: key);
 
@@ -90,6 +92,7 @@ class IconButtonWIdget extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class FloatingButtonWidget extends StatelessWidget {
   FloatingButtonWidget(
       {Key? key, this.bgColor, this.icon, this.pressed, this.elevation})
@@ -111,6 +114,7 @@ class FloatingButtonWidget extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class FloatingButtonWithTextWidget extends StatelessWidget {
   FloatingButtonWithTextWidget(
       {Key? key, this.bgColor, this.icon, this.pressed, this.elevation})

@@ -5,7 +5,7 @@ appBarWidget({title, color, leading, actions, centertitle, elevation, bottom}) {
   return AppBar(
     title: Text(title ?? 'AppBar'),
     centerTitle: centertitle ?? false,
-    backgroundColor: color ?? Colors.red,
+    backgroundColor: color ?? Colors.black12,
     actions: actions ?? [Container()],
     bottom: bottom,
     leading: leading,

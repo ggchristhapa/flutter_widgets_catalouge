@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:riddhasoft_utils/components/button/buttons.dart';
 import 'package:riddhasoft_utils/screens/Buttons/index.dart';
 import 'package:riddhasoft_utils/screens/Forms/index.dart';
 import 'package:riddhasoft_utils/screens/bottomappbar/index.dart';
 import 'package:riddhasoft_utils/screens/cards/index.dart';
+import 'package:riddhasoft_utils/screens/charts/index.dart';
 import 'package:riddhasoft_utils/screens/expansantiles/index.dart';
 import 'package:riddhasoft_utils/screens/gridbuilder/index.dart';
+import 'package:riddhasoft_utils/screens/hero/index.dart';
 import 'package:riddhasoft_utils/screens/imagepicker/index.dart';
 import 'package:riddhasoft_utils/screens/introductionscreen/index.dart';
+import 'package:riddhasoft_utils/screens/layoutbuilder/index.dart';
 import 'package:riddhasoft_utils/screens/liquidswipe/index.dart';
 import 'package:riddhasoft_utils/screens/listbuilder/listbuilder.dart';
 import 'package:riddhasoft_utils/screens/loader/index.dart';
 import 'package:riddhasoft_utils/screens/login/index.dart';
 import 'package:riddhasoft_utils/screens/map/index.dart';
 import 'package:riddhasoft_utils/screens/modal/index.dart';
+import 'package:riddhasoft_utils/screens/shimmer/index.dart';
 import 'package:riddhasoft_utils/screens/signup/index.dart';
 import 'package:riddhasoft_utils/screens/sliverlist/index.dart';
 
@@ -46,7 +49,10 @@ ListView drawerItemList(context) {
       itemBuilder: (_, index) {
         return InkWell(
           onTap: () {},
-          child: Container(
+          child: AnimatedOpacity(
+            curve: Curves.bounceInOut,
+            opacity: 0.5,
+            duration: Duration(seconds: 1),
             child: ListTile(
               leading: Icon(
                 utilsItems[index].icon,
@@ -78,6 +84,8 @@ List<ListItem> utilsItems = [
       'Buttons', true, Icons.smart_button_sharp, Colors.black, ButtonScreen()),
   ListItem('Modal', true, Icons.model_training, Colors.black, ModalScreen()),
   ListItem(
+      'Hero Widget', true, Icons.card_travel_sharp, Colors.black, HeroScreen()),
+  ListItem(
       'Grid Builder', true, Icons.grid_3x3, Colors.black, GridBuilderScreen()),
   ListItem('List Builder', true, Icons.list, Colors.black, ListBuilderScreen()),
   ListItem('Sliver List Builder', true, Icons.list, Colors.black,
@@ -88,8 +96,12 @@ List<ListItem> utilsItems = [
       IntroductinScreen()),
   ListItem('Map', true, Icons.map, Colors.black, MapScreen()),
   ListItem(
-      'Liquid Swiper', true, Icons.map, Colors.black, LiquidSwiperScreen()),
+      'Liquid Swiper', true, Icons.swipe, Colors.black, LiquidSwiperScreen()),
   ListItem('Loaders', true, Icons.refresh, Colors.black, LoaderScreen()),
+  ListItem('Shimmer', true, Icons.create, Colors.black, ShimmerScreen()),
+  ListItem('Charts', true, Icons.pie_chart, Colors.black, ChartScreen()),
+  ListItem('Layout Builder', true, Icons.layers_outlined, Colors.black,
+      LayoutBuilderScreen()),
   ListItem('Expansen Tiles (Accordin)', true, Icons.arrow_downward,
       Colors.black, ExpansionTileScreen()),
   ListItem(

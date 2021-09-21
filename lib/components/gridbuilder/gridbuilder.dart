@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 
 // ignore: must_be_immutable
 class GridBuilderWidget extends StatelessWidget {
@@ -21,7 +20,7 @@ class GridBuilderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.count(
       shrinkWrap: true,
-physics: NeverScrollableScrollPhysics(),
+      physics: NeverScrollableScrollPhysics(),
       crossAxisCount: crossaxiscount ?? 3,
       crossAxisSpacing: crossaxisspacing ?? 5,
       mainAxisSpacing: mainaxisspacing ?? 5,

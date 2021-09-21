@@ -13,26 +13,29 @@ class LoginScreen extends HookWidget {
     return Scaffold(
       appBar: appBarWidget(title: 'Login Screen', centertitle: true),
       body: Container(
-        padding: EdgeInsets.all(15),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Lottie.asset('assets/login.json',
-                height: MediaQuery.of(context).size.width * 0.5),
-            InputWidget(
-              label: 'Email',
-            ),
-            InputWidget(
-              label: 'Password',
-            ),
-            ButtonWidget(
-              title: 'Login',
-              btnIcon: Icons.login,
-              pressed: () {},
-              radius: 15.0,
-            )
-          ],
+        alignment: Alignment.center,
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(15),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Lottie.asset('assets/login.json',
+                  height: MediaQuery.of(context).size.width * 0.4),
+              InputWidget(
+                label: 'Email',
+              ),
+              InputWidget(
+                label: 'Password',
+              ),
+              ButtonWidget(
+                title: 'Login',
+                btnIcon: Icons.login,
+                pressed: () {},
+                radius: 15.0,
+              )
+            ],
+          ),
         ),
       ),
     );
